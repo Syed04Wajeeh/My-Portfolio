@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6;
+    color: #002502;
+    
+    
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #96e99a;
+    
+}
+
+section, header {
+    padding-top: 60px; 
+    padding-bottom: 60px;
+    color: #002b02;
+    background-color: #d5ffd5;
+}
+
+#about h1 {
+    /* TODO: Choose a color for your main heading */
+    color: #1c7700; /* Example: Bootstrap primary blue */
+}
+
+/* Project Card Enhancements */
+.card {
+    border: 1px solid #8ad67a; /* Softer border */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #d5ffd5;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for card images */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    background-color: #006900; /* Placeholder background for images */
+}
+
+.card-title {
+    color: #047700; /* Darker title for cards */
+}
+
+.btn-primary {
+    background-color: #00a800;
+    border-color: #00a800;
+}
+
+.btn-primary:hover {
+    background-color: #016401;
+    border-color: #016401;
+}
+
+footer {
+    background-color: #00ff55; /* Bootstrap dark */
+    /* color: rgba(255, 255, 255, 0.75); */
+}
+
+/* Responsive Adjustments (Example) */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    #about img {
+        width: 120px;
+        height: 120px;
+    }
+}
