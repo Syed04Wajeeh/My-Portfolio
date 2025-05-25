@@ -8,7 +8,7 @@ body {
 
 .navbar-brand {
     font-weight: bold;
-    color: #96e99a;
+    color: #8ee292;
     
 }
 
@@ -20,13 +20,11 @@ section, header {
 }
 
 #about h1 {
-    /* TODO: Choose a color for your main heading */
-    color: #1c7700; /* Example: Bootstrap primary blue */
+    color: #1c7700;
 }
 
-/* Project Card Enhancements */
 .card {
-    border: 1px solid #8ad67a; /* Softer border */
+    border: 1px solid #8ad67a; 
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     background-color: #d5ffd5;
 }
@@ -37,13 +35,13 @@ section, header {
 }
 
 .card-img-top {
-    height: 200px; /* Fixed height for card images */
-    object-fit: cover; /* Ensures image covers the area without distortion */
-    background-color: #006900; /* Placeholder background for images */
+    height: 200px; 
+    object-fit: cover; 
+    background-color: #006900;
 }
 
 .card-title {
-    color: #047700; /* Darker title for cards */
+    color: #047700;
 }
 
 .btn-primary {
@@ -57,11 +55,9 @@ section, header {
 }
 
 footer {
-    background-color: #00ff55; /* Bootstrap dark */
-    /* color: rgba(255, 255, 255, 0.75); */
+    background-color: #00ff55;
 }
 
-/* Responsive Adjustments (Example) */
 @media (max-width: 768px) {
     .display-4 {
         font-size: 2.5rem;
