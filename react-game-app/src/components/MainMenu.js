@@ -16,20 +16,35 @@ function MainMenu({ onStartGame }) {
   };
 
   return (
-    <div className="text-center">
-      <h2>Game Settings</h2>
-      <p>Please choose your preferred difficulty to begin the exercise.</p>
-      <div className="mb-4" style={{maxWidth: '400px', margin: '0 auto'}}>
-        <label className="form-label d-block">Difficulty Level:</label>
-        <select className="form-select" value={selectedLevel.name} onChange={handleLevelChange}>
-          {levels.map(level => (
-            <option key={level.name} value={level.name}>{level.name} ({level.cards} cards)</option>
-          ))}
-        </select>
+    <div>
+      <div className="d-flex justify-content-end mb-3">
+        <a 
+          href="https://syed04wajeeh.github.io/My-Portfolio/"
+          className="btn btn-outline-secondary" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          My Portfolio
+        </a>
       </div>
-      <button className="btn-eleanor mt-3" onClick={() => onStartGame(selectedLevel)}>
-        Begin Game
-      </button>
+
+      <div className="text-center">
+        <h2>Game Settings</h2>
+        <p>Please choose your preferred difficulty to begin the exercise.</p>
+        
+        <div className="d-flex justify-content-center align-items-center mb-4" style={{maxWidth: '400px', margin: '0 auto'}}>
+          <label className="form-label me-3 mb-0">Difficulty Level:</label>
+          <select className="form-select" value={selectedLevel.name} onChange={handleLevelChange}>
+            {levels.map(level => (
+              <option key={level.name} value={level.name}>{level.name} ({level.cards} cards)</option>
+            ))}
+          </select>
+        </div>
+        
+        <button className="btn-eleanor mt-3" onClick={() => onStartGame(selectedLevel)}>
+          Begin Game
+        </button>
+      </div>
     </div>
   );
 }
