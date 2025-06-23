@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// Helper function to shuffle an array
 const shuffleArray = (array) => {
   return array.sort(() => Math.random() - 0.5);
 };
@@ -15,7 +14,7 @@ function GameBoard({ level, onGameEnd }) {
 
   // --- Game Setup ---
   useEffect(() => {
-    const imageIds = Array.from({ length: 12 }, (_, i) => i + 1); // Assuming 12 images named 1.jpg to 12.jpg
+    const imageIds = Array.from({ length: 12 }, (_, i) => i + 1);
     const selectedImages = shuffleArray(imageIds).slice(0, level.cards / 2);
     const gameCards = shuffleArray([...selectedImages, ...selectedImages]).map((id, index) => ({
       id: index,
@@ -26,7 +25,7 @@ function GameBoard({ level, onGameEnd }) {
     setCards(gameCards);
     startTimer();
 
-    return () => clearInterval(timerRef.current); // Cleanup timer on unmount
+    return () => clearInterval(timerRef.current);
   }, [level]);
 
   // --- Timer Logic ---
@@ -48,14 +47,12 @@ function GameBoard({ level, onGameEnd }) {
       setMoves(prevMoves => prevMoves + 1);
       const [first, second] = flippedCards;
       if (cards[first].imageId === cards[second].imageId) {
-        // It's a match
         setCards(prevCards => prevCards.map(card => 
           (card.imageId === cards[first].imageId) ? { ...card, isMatched: true } : card
         ));
         setMatchedPairs(prev => prev + 1);
         setFlippedCards([]);
       } else {
-        // Not a match, flip back after a delay
         setTimeout(() => {
           setFlippedCards([]);
         }, 1000);
@@ -103,7 +100,7 @@ function GameBoard({ level, onGameEnd }) {
               <div className="card-face card-back"></div>
               <div
                 className="card-face card-front"
-                style={{ backgroundImage: `url(/images/${card.imageId}.jpg)` }}
+                style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/${card.imageId}.jpg)` }}
               ></div>
             </div>
           </div>
