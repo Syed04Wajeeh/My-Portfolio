@@ -1,0 +1,23 @@
+import React from 'react';
+
+function Header({ cartCount, onNavigate }) {
+  const cartButtonClass = `btn btn-outline-dark ${cartCount > 0 ? 'cart-button-glow' : ''}`;
+
+  return (
+    <header className="bg-white shadow-sm sticky-top">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container">
+          <span className="navbar-brand mb-0 h1 fs-4" style={{cursor: 'pointer'}} onClick={() => onNavigate('list')}>
+            <i className="bi bi-keyboard-fill me-2"></i>Key Lair
+          </span>
+          <button className={cartButtonClass} onClick={() => onNavigate('cart')}>
+            <i className="bi bi-cart-fill me-1"></i>
+            Cart <span className="badge bg-dark text-white ms-1 rounded-pill">{cartCount}</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;
