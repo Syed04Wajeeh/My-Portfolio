@@ -19,7 +19,6 @@ body {
   border-radius: 8px;
 }
 
-/* --- NEW --- GLOWING BUTTON EFFECT --- */
 .cart-button-glow {
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.5);
   animation: pulse 1.5s infinite;
