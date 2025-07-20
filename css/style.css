@@ -67,3 +67,7 @@ footer {
         height: 120px;
     }
 }
+
+#projects, #about {
+    background-color: #ffffff; /* White background */
+}

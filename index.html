@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wajeeh Syed - UI/UX Portfolio</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">  
-      <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Adding a custom style block for specific section colors -->
+    <style>
+        .how-i-work-section {
+            background-color: #f0fff0; /* A softer, lighter green */
+        }
+        .btn-custom-green {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+        .btn-custom-green:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,21 +31,21 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">Wajeeh Syed - Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#how-i-work">How I Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Case Studies</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- About You Section -->
-    <header id="about" class="py-5 text-center bg-light">
+    <!-- About You Section (Now with a white background) -->
+    <header id="about" class="py-5 text-center">
         <div class="container">
             <img src="images/profile.jpg" alt="My Profile" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
             <h1 class="display-4">Hi, I'm Wajeeh Syed</h1>
@@ -41,12 +57,12 @@
         </div>
     </header>
 
-    <!-- How You Work Section -->
-    <section id="how-i-work" class="py-5">
+    <!-- How You Work Section (with specific green background class) -->
+    <section id="how-i-work" class="py-5 how-i-work-section">
         <div class="container">
             <h2 class="text-center mb-4">How I Work</h2>
             <div class="row">
-                <div class="col-md-8 mx-auto">
+                <div class="col-lg-8 mx-auto">
                     <p>
                         As a student currently taking a UI/UX design course (SEG3125), I am actively learning the principles of user-centered design, visual communication, and interaction design. My process involves:
                     </p>
@@ -64,57 +80,60 @@
         </div>
     </section>
 
-    <!-- Case Studies / Projects Section -->
-    <section id="projects" class="py-5 bg-light">
+    <!-- Case Studies / Projects Section (Now with a white background) -->
+    <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Case Studies
+            <h2 class="text-center mb-5">Case Studies</h2>
+            <div class="row justify-content-center">
+
                 <!-- Project 1: Service Site -->
-                <div class="col-md-6 col-lg-3 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4 d-flex align-items-stretch">
                     <div class="card h-100">
                         <img src="images/service-placeholder.jpg" class="card-img-top" alt="Service Site Design Placeholder">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Design 1: G36 Air</h5>
                             <p class="card-text">A website for a plane ticket booking.</p>
-                            <a href="skyscanner-lite-prototype/build/index.html" class="btn btn-primary mt-auto">View Details </a>
+                            <a href="skyscanner-lite-prototype/build/index.html" class="btn btn-custom-green mt-auto">View Details</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2: Small Game -->
-                <div class="col-md-6 col-lg-3 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4 d-flex align-items-stretch">
                     <div class="card h-100">
                         <img src="images/game.jpg" class="card-img-top" alt="Small Game Design Placeholder">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Design 2: Serene Mind</h5>
                             <p class="card-text">Interface design for a web-based memory card game.</p>
-                            <a href="react-game-app/build/index.html" class="btn btn-primary mt-auto">View Details </a>
+                            <a href="react-game-app/build/index.html" class="btn btn-custom-green mt-auto">View Details</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3: E-commerce Site -->
-                <div class="col-md-6 col-lg-3 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4 d-flex align-items-stretch">
                     <div class="card h-100">
                         <img src="images/store.jpeg" class="card-img-top" alt="E-commerce Site Design Placeholder">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Design 3: Key Lair</h5>
                             <p class="card-text">Design for an online keyboard accessory store.</p>
-                            <a href="e-commerce-app/build/index.html" class="btn btn-primary mt-auto">View Details</a>
+                            <a href="e-commerce-app/build/index.html" class="btn btn-custom-green mt-auto">View Details</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 4: Analytics Site -->
-                <div class="col-md-6 col-lg-3 mb-4">
+                <div class="col-md-6 col-lg-3 mb-4 d-flex align-items-stretch">
                     <div class="card h-100">
                         <img src="images/graph.png" class="card-img-top" alt="Analytics Site Design Placeholder">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Design 4: Gasoline Analytics Site</h5>
+                            <h5 class="card-title">Design 4: Gasoline Analytics</h5>
                             <p class="card-text">A dashboard for data visualization about gasoline.</p>
-                            <a href="dashboard-app/build/index.html" class="btn btn-primary mt-auto">View Details</a>
+                            <a href="dashboard-app/build/index.html" class="btn btn-custom-green mt-auto">View Details</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -122,14 +141,12 @@
     <!-- Footer -->
     <footer class="py-4 bg-dark text-white text-center">
         <div class="container">
-            <p class="mb-0">2025 Wajeeh Syed - University of Ottawa.</p>
+            <p class="mb-0">© 2025 Wajeeh Syed - University of Ottawa.</p>
             <p class="mb-0">Portfolio for SEG3125.</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS-->
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
