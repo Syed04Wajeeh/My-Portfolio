@@ -26,7 +26,7 @@ section, header {
 .card {
     border: 1px solid #8ad67a; 
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    background-color: #d5ffd5;
+    background-color: #a1f3a1;
 }
 
 .card:hover {
@@ -70,4 +70,45 @@ footer {
 
 #projects, #about {
     background-color: #ffffff; /* White background */
+    
 }
+
+/* ======================== */
+/*  SKILLS SECTION STYLES   */
+/* ======================== */
+
+.skill-cloud {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px; /* Adds space between skill items */
+}
+
+.skill-item {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0fff0; /* A very light green, almost white */
+    color: #002b02; /* Your main text color */
+    padding: 6px 14px;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #8ad67a; /* Same border as your cards */
+    transition: all 0.2s ease-in-out;
+}
+
+.skill-item:hover {
+    background-color: #00a800; /* Your primary button color */
+    color: #ffffff; /* White text for contrast */
+    border-color: #016401; /* Darker green border on hover */
+    transform: translateY(-2px);
+    cursor: default;
+}
+
+.skill-item i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+

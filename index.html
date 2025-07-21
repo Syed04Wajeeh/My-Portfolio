@@ -9,6 +9,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Adding a custom style block for specific section colors -->
+         <!-- Devicon for technology logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Font Awesome for general icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .how-i-work-section {
             background-color: #f0fff0; /* A softer, lighter green */
@@ -22,6 +26,9 @@
             background-color: #218838;
             border-color: #1e7e34;
             color: white;
+        }
+        #skills {
+        background-color: #c0f7c0; /* A pleasant, slightly darker and muted green */
         }
     </style>
 </head>
@@ -38,7 +45,8 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#how-i-work">How I Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interactive-projects">Interactive Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#other-projects">Other Projects</a></li>
                 </ul>
             </div>
         </div>
@@ -53,7 +61,7 @@
                 A passionate student exploring the world of coding, discovering how to navigate User Interface and User Experience Design.
                 I thrive while learning new technologies, and I love creative problem-solving.
             </p>
-            <p>Currently enrolled in the Honors Computer Science program at the University of Ottawa.</p>
+            <p>Currently a third year in the Honors Computer Science program at the University of Ottawa.</p>
         </div>
     </header>
 
@@ -81,7 +89,7 @@
     </section>
 
     <!-- Case Studies / Projects Section  -->
-    <section id="projects" class="py-5">
+    <section id="interactive-projects" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Interactive Projects</h2>
             <div class="row justify-content-center">
@@ -138,7 +146,7 @@
         </div>
     </section>
 
-    <section id="projects" class="py-5">
+    <section id="other-projects" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Other Projects</h2>
             <div class="row justify-content-center">
@@ -179,6 +187,109 @@
             </div>
         </div>
     </section>
+    <!-- ============================================= -->
+<!--                 SKILLS SECTION                -->
+<!-- ============================================= -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Technical Skills</h2>
+            <div class="row justify-content-center g-4">
+
+                <!-- Languages Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-4">Languages</h5>
+                            <div class="skill-cloud">
+                                <span class="skill-item"><i class="devicon-java-plain"></i> Java</span>
+                                <span class="skill-item"><i class="devicon-csharp-plain"></i> C#</span>
+                                <span class="skill-item"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="skill-item"><i class="devicon-cplusplus-plain"></i> C++</span>
+                                <span class="skill-item"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                                <span class="skill-item"><i class="devicon-html5-plain"></i> HTML5</span>
+                                <span class="skill-item"><i class="devicon-css3-plain"></i> CSS3</span>
+                                <span class="skill-item"><i class="devicon-mysql-plain"></i> SQL</span>
+                                <span class="skill-item"><i class="devicon-bash-plain"></i> Bash</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libs Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-4">Frameworks & Libs</h5>
+                            <div class="skill-cloud">
+                                <span class="skill-item"><i class="devicon-dotnetcore-plain"></i> .NET & WPF</span>
+                                <span class="skill-item"><i class="devicon-react-original"></i> React</span>
+                                <span class="skill-item"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                                <span class="skill-item"><i class="devicon-django-plain"></i> Django</span>
+                                <span class="skill-item"><i class="fas fa-gamepad"></i> Pygame</span>
+                                <span class="skill-item"><i class="devicon-android-plain"></i> Android SDK</span>
+                                <span class="skill-item"><i class="fab fa-discord"></i> Discord API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Developer Tools Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-4">Developer Tools</h5>
+                            <div class="skill-cloud">
+                                <span class="skill-item"><i class="devicon-git-plain"></i> Git</span>
+                                <span class="skill-item"><i class="devicon-firebase-plain"></i> Firebase</span>
+                                <span class="skill-item"><i class="devicon-visualstudio-plain"></i> Visual Studio</span>
+                                <span class="skill-item"><i class="devicon-vscode-plain"></i> VS Code</span>
+                                <span class="skill-item"><i class="devicon-intellij-plain"></i> IntelliJ</span>
+                                <span class="skill-item"><i class="devicon-linux-plain"></i> Linux/UNIX</span>
+                                <span class="skill-item"><i class="devicon-mysql-plain"></i> MySQL</span>
+                                <span class="skill-item"><i class="fas fa-database"></i> SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Productivity & Methods Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-4">Productivity & Methods</h5>
+                            <div class="skill-cloud">
+                                <span class="skill-item"><i class="fas fa-users"></i> Agile/Scrum</span>
+                                <span class="skill-item"><i class="fab fa-microsoft"></i> Microsoft Office</span>
+                                <span class="skill-item"><i class="fab fa-google-drive"></i> Google Workspace</span>
+                                <span class="skill-item"><i class="fab fa-trello"></i> Trello</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-4">Testing</h5>
+                            <div class="skill-cloud">
+                                <span class="skill-item"><i class="fas fa-vial"></i> JUnit</span>
+                                <span class="skill-item"><i class="fas fa-vial"></i> Mockito</span>
+                                <span class="skill-item"><i class="fas fa-vial"></i> Selenium</span>
+                                <span class="skill-item"><i class="fas fa-vial"></i> JaCoCo</span>
+                                <span class="skill-item"><i class="fas fa-vial"></i> Spotbugs</span>
+                                <span class="skill-item"><i class="fas fa-vial"></i> JMH</span>
+                                <span class="skill-item"><i class="fas fa-vial"></i> PITTest</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Footer -->
     <footer class="py-4 bg-dark text-white text-center">
