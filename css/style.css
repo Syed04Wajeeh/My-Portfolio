@@ -112,3 +112,32 @@ footer {
     vertical-align: middle;
 }
 
+/* ======================== */
+/*  COURSEWORK PILL STYLES  */
+/* ======================== */
+
+.coursework-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.course-item {
+    background-color: #f0fff0; /* A color from your theme */
+    color: #002b02;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #8ad67a;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+}
+
+.course-item:hover {
+    background-color: #00a800;
+    color: #ffffff;
+    border-color: #016401;
+    transform: translateY(-2px);
+}
