@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - TwoOkNotes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main Stylesheet - NOTE THE CORRECTED PATH! -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar (Copied from main page) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <!-- Link back to the main portfolio -->
+            <a class="navbar-brand" href="../../index.html">Wajeeh Syed - Portfolio</a>
+        </div>
+    </nav>
+
+    <!-- Main Project Content -->
+    <main class="project-page-content py-5">
+        <div class="container">
+
+            <!-- Project Header -->
+            <div class="text-center mb-5">
+                <h1>TwoOkNotes</h1>
+                <p class="lead text-muted">A WPF-based Desktop Application for Handwritten Notes</p>
+            </div>
+
+            <!-- Video Demo Section -->
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="video-container shadow-lg">
+                        <video width="100%" autoplay loop muted playsinline>
+                            <source src="TwoOkNotes-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag. Please view the source code on GitHub.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="text-center my-5">
+                <a href="https://github.com/SummitKC/OkNotes" class="btn btn-dark btn-lg me-3" target="_blank"><i class="fab fa-github me-2"></i>View Source Code</a>
+            </div>
+
+            <!-- Project Details Section -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <h3>About The Project</h3>
+                    <p>
+                        TwoOkNotes is a desktop application built with C# and WPF that allows users to create, save, and manage digital handwritten notes. The project was developed to explore modern desktop development patterns and provide a simple, intuitive tool for note-taking.
+                    </p>
+                    <hr class="my-4">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Dynamic Pen Tools:</strong> Customizable pen settings, including color and thickness, along with an eraser tool.</li>
+                        <li><strong>File Management:</strong> Integrated system to save notes as files, reopen them for editing, and organize them into notebooks.</li>
+                        <li><strong>Clean Architecture:</strong> Utilizes the MVVM (Model-View-ViewModel) design pattern to separate UI, logic, and data, enhancing maintainability and testability.</li>
+                        <li><strong>Undo/Redo Functionality:</strong> Implemented a command stack to allow users to easily undo and redo their actions.</li>
+                    </ul>
+                    <hr class="my-4">
+                    <h3>Technologies Used</h3>
+                    <div class="skill-cloud">
+                        <span class="skill-item"><i class="fab fa-windows me-2"></i>WPF</span>
+                        <span class="skill-item"><i class="fas fa-code me-2"></i>C#</span>
+                        <span class="skill-item"><i class="devicon-dotnetcore-plain me-2"></i>.NET 8.0</span>
+                        <span class="skill-item"><i class="fas fa-cubes me-2"></i>MVVM Architecture</span>
+                        <span class="skill-item"><i class="devicon-visualstudio-plain me-2"></i>Visual Studio</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer (Copied from main page) -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">© 2025 Wajeeh Syed - University of Ottawa.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

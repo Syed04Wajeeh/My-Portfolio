@@ -141,3 +141,29 @@ footer {
     border-color: #016401;
     transform: translateY(-2px);
 }
+
+/* ======================== */
+/*  PROJECT PAGE STYLES     */
+/* ======================== */
+
+.project-page-content {
+    background-color: #ffffff; /* A clean white background for content */
+}
+
+.video-container {
+    border-radius: 15px;
+    overflow: hidden; /* This makes the video corners rounded */
+    border: 1px solid #ddd;
+}
+
+.btn-custom-green {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+.btn-custom-green:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    color: white;
+}
