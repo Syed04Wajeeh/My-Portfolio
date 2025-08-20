@@ -167,3 +167,27 @@ footer {
     border-color: #1e7e34;
     color: white;
 }
+
+
+/* ======================== */
+/*  CAROUSEL STYLES         */
+/* ======================== */
+
+#projectCarousel {
+    background-color: #212529; /* A dark background for the carousel frame */
+    border-radius: 15px;
+    overflow: hidden; /* Ensures the rounded corners apply to the images */
+}
+
+.carousel-item img {
+    max-height: 600px; /* Adjust this value to fit your needs */
+    width: auto;
+    object-fit: contain; /* Prevents image stretching */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 10px;
+    padding: 10px 15px !important;
+}
